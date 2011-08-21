@@ -1,0 +1,27 @@
+About
+
+Provides ability to use pagination like on bash.org.ru (main content always on last page, wich is realy first), so on page/1 always fixed materials.
+Requirements
+
+Yii 1.1.8+ (may not work with previous versions, or may work - don`t know)
+Installation
+
+Copy ReversedPagination to your application/extensions path.
+
+Add 'ext.ReversedPagination.*' element to import section of your yii configuration file. Like this:
+
+    return array(
+        'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+        'name'=>'SiteName',
+        // autoloading model and component classes
+        'import'=>array(
+            'application.models.*',
+            'ext.ReversedPagination.*',
+        ),
+
+Usage
+
+See http://www.yiiframework.com/doc/api/1.1/CPagination/ and http://www.yiiframework.com/doc/api/1.1/CLinkPager/ for usage documentation.
+Example
+
+See: bash.org.ru or http://xp-dev.com/svn/bhengine/trunk/
